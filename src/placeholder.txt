@@ -1,0 +1,7 @@
+This folder will contain backend and integration code for the WhatsApp travel assistant.
+
+- API routing
+- Claude integration
+- WhatsApp event handling
+- database access
+- automation helpers
