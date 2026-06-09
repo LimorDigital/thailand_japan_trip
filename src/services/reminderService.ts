@@ -1,5 +1,6 @@
 import { Reminder } from '../types';
 import { sendWhatsAppText } from './whatsappClient';
+import { DEFAULT_TRIP_ID } from './constants';
 
 const defaultWhatsAppNumber = process.env.TRAVELER_WHATSAPP_NUMBER || '';
 
@@ -27,7 +28,7 @@ export function createPackingReminder(): Reminder {
 
   return {
     id: 'reminder-packing-thailand',
-    tripId: 'trip-2026-japan-thailand',
+    tripId: DEFAULT_TRIP_ID,
     title: 'תזכורת לאריזה לפני העזיבה לקו פאנגאן',
     description: 'ארזו בגדי ים, קרם הגנה, בגדים קלים, מסמכי נסיעה, מטענים, תרופות וציוד חיוני לילדים.',
     remindAt,

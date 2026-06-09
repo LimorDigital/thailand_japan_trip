@@ -1,4 +1,5 @@
 import { Accommodation, Attraction, Flight, Traveler, Trip } from '../types';
+import { DEFAULT_TRIP_ID } from './constants';
 
 const travelers: Traveler[] = [
   { id: 'traveler-limor', firstName: 'Limor', lastName: 'Gurevich', role: 'adult' },
@@ -8,7 +9,7 @@ const travelers: Traveler[] = [
 ];
 
 const trip: Trip = {
-  id: 'trip-2026-japan-thailand',
+  id: DEFAULT_TRIP_ID,
   name: 'Japan & Thailand Family Travel 2026',
   destination: 'Thailand and Japan',
   startDate: '2026-06-25',

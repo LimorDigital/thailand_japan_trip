@@ -3,9 +3,10 @@ import { sendWhatsAppText } from '../services/whatsappClient';
 import { getTripContext } from '../services/tripService';
 import { parseWhatsAppEvent } from '../services/whatsappParser';
 import { appendConversationHistory, getConversationHistory } from '../services/conversationMemoryRepository';
+import { DEFAULT_TRIP_ID } from '../services/constants';
 
 const tripContext = getTripContext();
-const tripId = 'trip-2026-japan-thailand';
+const tripId = DEFAULT_TRIP_ID;
 
 const assistantInstructions = `אתה עוזר נסיעות אישי נאמן עבור משפחת גורביץ'. כל התשובות חייבות להיות בעברית שוטפת וברורה. אתה מנהל את כל הלוגיסטיקה של הנסיעה, כולל טיסות, מלונות, תחבורה, אטרקציות, תזכורות ולוז יומי. שמור על סגנון חם, מקצועי ותמציתי. הימנע מהמלצות על מסלולים מהירים מדי, מלכודות תיירים ונסיעות לא נוחות.`;
 

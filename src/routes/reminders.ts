@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import { createPackingReminder, sendReminder } from '../services/reminderService';
 import { createReminder } from '../services/reminderRepository';
+import { DEFAULT_TRIP_ID } from '../services/constants';
 
 const router = Router();
 
@@ -32,7 +33,7 @@ router.post('/test', async (req, res, next) => {
   try {
     const reminder = {
       id: 'reminder-test',
-      tripId: 'trip-2026-japan-thailand',
+      tripId: DEFAULT_TRIP_ID,
       title: 'Test travel reminder',
       description: 'זוהי תזכורת בדיקה עבור העוזר האישי.',
       remindAt: new Date().toISOString(),
