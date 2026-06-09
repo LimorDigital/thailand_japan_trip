@@ -33,6 +33,8 @@ A WhatsApp-based AI travel concierge for a family trip to Thailand and Japan. Th
 4. Create the database schema with `npm run migrate`
 5. Run the server locally with `npm run dev`
 
+> `npm run migrate` applies all SQL migration files in `schema/`, including the default trip seed added in `schema/003_seed_trip_data.sql`.
+
 ## Available Endpoints
 
 - `GET /webhook/whatsapp` - WhatsApp webhook verification endpoint

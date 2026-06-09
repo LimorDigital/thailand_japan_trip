@@ -1,4 +1,7 @@
 import app from './server';
+import { validateConfig } from './config';
+
+validateConfig();
 
 const port = process.env.PORT ? Number(process.env.PORT) : 4000;
 
